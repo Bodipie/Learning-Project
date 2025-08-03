@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0;
+    width: fit-content;
+}
+
+.formItem {
+    min-height: 1.5em;
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+}
+
+#container1, #container2, #container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 1em;
+    padding-top: 1em;
+    border: 1px solid black;
+    height: 20em;
+    width: 20em;
+    overflow: scroll;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.item {
+    text-align: center;
+    border: 1px solid black;
+    max-height: fit-content;
+    padding: 1em;
+    width: 60%;
+    margin-bottom: 1em;
+    cursor: grab;
+}
+
+.containerTitle {
+    margin-bottom: 1em;
+}

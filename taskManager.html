@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/taskManager.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="title">Task Manager</h1>
+        <nav class="navBar">
+            <a class="navItem" href="HomePage.html">Home Page</a>
+            <a class="navItem" href="about.html">About Me</a>
+            <a class="navItem" href="contact.html">Contact Me</a>
+            <a class="navItem" href="submitRequest.html">Submit a Request</a>
+            <a class="navItem" href="art.html">Art</a>
+            <a class="navItem" href="chart.html">Chart</a>
+        </nav>
+    </header>
+
+    <!-- Page Body -->
+    <main>
+        <form onsubmit="handleData(event)">
+            <input placeholder="Enter a new task" class="formItem" id="input" />
+            <button class="formItem" type="submit">Add Task</button>
+
+            <div class="break"></div>
+
+            <div id="container1">
+                <h2 class="containerTitle">To Do</h2>
+                <div class="break"></div>
+            </div>
+
+            <div id="container2">
+                <h2 class="containerTitle">In Progress</h2>
+                <div class="break"></div>
+            </div>
+
+            <div id="container3">
+                <h2 class="containerTitle">Complete</h2>
+                <div class="break"></div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            Copyright Abdalla Tarek 2025
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="scripts/taskManager.js"></script>
+</body>
+
+</html>
